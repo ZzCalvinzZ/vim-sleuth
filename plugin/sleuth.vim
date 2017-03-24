@@ -148,6 +148,7 @@ function! s:detect() abort
   if has_key(options, 'shiftwidth')
     return s:apply_if_ready(extend({'expandtab': 1}, options))
   endif
+  set paste
 endfunction
 
 setglobal smarttab

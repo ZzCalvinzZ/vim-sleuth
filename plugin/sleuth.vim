@@ -77,6 +77,7 @@ function! s:guess(lines) abort
   if heuristics.soft <= heuristics.hard
     let options.expandtab = 0
     let options.tabstop = 4
+    let options.shiftwidth = 4
   else
     let options.expandtab = 1
   endif
